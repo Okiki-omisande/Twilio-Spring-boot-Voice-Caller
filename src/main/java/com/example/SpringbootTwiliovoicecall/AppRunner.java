@@ -11,7 +11,7 @@ import java.net.URI;
 public class AppRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Call.creator(new PhoneNumber(TwilioConfig.VC_RECEIVING_NUMBER),
+        Call.creator(new PhoneNumber(TwilioConfig.VOICE_CALL_RECEIVING_NUMBER),
                 new PhoneNumber(TwilioConfig.MY_TWILIO_PHONE_NUMBER),
                 new URI("http://demo.twilio.com/docs/voice.xml")).create();
     }
